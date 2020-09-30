@@ -30,15 +30,28 @@
 
         <title>Badgers</title>
     </head>
+
+    <style>
+        .container {
+            animation: fadeInAnimation ease-in 1.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html">
-                <img
-                    src="images/TeamBadgers.png"
-                    width="30px"
-                    height="30px"
-                />Badgers</a
-            >
+                <img src="images/TeamBadgers.png" width="30px" height="30px" />
+            </a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -54,9 +67,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html"
-                            >Home <span class="sr-only">(current)</span></a
-                        >
+                        <a class="nav-link" href="index.html">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
 
                     <li class="nav-item">
@@ -77,22 +91,93 @@
                 </ul>
             </div>
         </nav>
+
         <br />
         <br />
-        <div class="font-big">Skills/Knowledge Badging System</div>
-        <br />
-        <br />
-        <footer class="page-footer font-small cyan darken-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 py-5">
-                        <div class="mb-5 flex-center"></div>
-                    </div>
+
+        <div class="container">
+            <div class="text-center">
+                <img
+                    class="LOGO"
+                    src="images/TeamBadgers.png"
+                    width="160px"
+                    height="160px"
+                />
+
+                <h1 class="display-2">Team Badgers</h1>
+                <h2 class="display-4" style="font-size: 30pt">
+                    Skills/Knowledge Badging System
+                </h2>
+
+                <hr
+                    style="
+                        width: 40%;
+                        text-align: center;
+                        background-color: slategray;
+                        margin-top: 10vh;
+                        margin-bottom: 15vh;
+                    "
+                />
+
+                <p
+                    class="greeting"
+                    style="
+                        width: 60%;
+                        display: inline-block;
+                        margin-bottom: 20vh;
+                    "
+                >
+                    Welcome to Team Badger's Computer Science Capstone Landing
+                    Page. As a team, we have worked together to develop an
+                    internal social media to recognize skills and hard work for
+                    the employees at State Farm Insurance. With the use of a
+                    badging system, we have brought back an aspect of a social
+                    working environment that has been lost due to the pandemic.
+                </p>
+            </div>
+        </div>
+
+        <footer
+            class="footer"
+            style="min-height: 30vh; background-color: crimson"
+        >
+            <div
+                class="row py-5"
+                style="width: 100%; justify-content: center; text-align: center"
+            >
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Sponsors</span>
+                    <br />
+                    <span>Dave Hopfensperger</span>
+                    <span>Glenn Austin</span>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Team Members</span>
+                    <br />
+                    <span style="font-size: 10pt">Abdulrahman Alamoudi</span>
+                    <span style="font-size: 10pt">Tristan Marcus</span>
+                    <span style="font-size: 10pt">Logan Ritter</span>
+                    <span style="font-size: 10pt">Robel Tegegne</span>
+                    <span style="font-size: 10pt">Yuanbo Xu</span>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Team Mentor</span>
+                    <br />
+                    <span style="font-size: 10pt">Sambashiva Kethireddy</span>
                 </div>
             </div>
 
-            <div class="footer-text text-center py-3">
-                Team Badgers 2020-2021 NAU Computer Science Capstone Team
+            <div class="footer-text text-center py-0">
+                © Team Badgers 2020-2021 NAU Computer Science Capstone Team
             </div>
         </footer>
     </body>

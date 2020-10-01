@@ -1,184 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Web site" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site" />
 
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel=”stylesheet” type=”text/css” href=index.css” />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
 
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-            crossorigin="anonymous"
-        />
+    <title>Badgers</title>
+  </head>
 
-        <title>Badgers</title>
-    </head>
+  <style>
+    .container {
+      animation: fadeInAnimation ease-in 1.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
 
-    <style>
-        .container {
-            animation: fadeInAnimation ease-in 1.5s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-        @keyframes fadeInAnimation {
-            0% {
-                opacity: 0;
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script type="text/JavaScript">
+    // state = {
+
+            // }
+            var show= false;
+            var tog = document.getElementById("toggle");
+        function toggle() {
+
+            show = !show;
+            if(show){
+            console.log("jjjjj");
             }
-            100% {
-                opacity: 1;
-            }
         }
-    </style>
+  </script>
 
-    <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/TeamBadgers.png" width="30px" height="30px" />
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/TeamBadgers.png" width="30px" height="30px" /> Badgers
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#toggle"
+        aria-controls="toggle"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="{toggle()}"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="toggle">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+              Home
+              <span class="sr-only">(current)</span>
             </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="ProjectDescription.html"
+              >Project Description</a
             >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">
-                            Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ProjectDocuments.html"
+              >Project Documents</a
+            >
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="ProjectDescription.html"
-                            >Project Description</a
-                        >
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TheTeam.html">The Team</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="ProjectDocuments.html"
-                            >Project Documents</a
-                        >
-                    </li>
+    <br />
+    <br />
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="TheTeam.html">The Team</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="container" style="margin-top: 6vh">
+      <div class="text-center">
+        <img
+          class="LOGO"
+          src="images/TeamBadgers.png"
+          width="160px"
+          height="160px"
+        />
 
-        <br />
-        <br />
+        <h1 class="display-2" style="margin-top: 5vh">Team Badgers</h1>
+        <h2 class="display-4" style="font-size: 30pt">
+          Skills/Knowledge Badging System
+        </h2>
 
-        <div class="container" style="margin-top: 6vh">
-            <div class="text-center">
-                <img
-                    class="LOGO"
-                    src="images/TeamBadgers.png"
-                    width="160px"
-                    height="160px"
-                />
+        <hr
+          style="
+            width: 40%;
+            text-align: center;
+            background-color: slategray;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+          "
+        />
 
-                <h1 class="display-2" style="margin-top: 5vh">Team Badgers</h1>
-                <h2 class="display-4" style="font-size: 30pt">
-                    Skills/Knowledge Badging System
-                </h2>
-
-                <hr
-                    style="
-                        width: 40%;
-                        text-align: center;
-                        background-color: slategray;
-                        margin-top: 10vh;
-                        margin-bottom: 10vh;
-                    "
-                />
-
-                <p
-                    class="greeting"
-                    style="
-                        width: 60%;
-                        display: inline-block;
-                        margin-bottom: 20vh;
-                    "
-                >
-                    Welcome to Team Badger's Computer Science Capstone Landing
-                    Page. As a team, we have worked together to develop an
-                    internal social media to recognize skills and hard work for
-                    the employees at State Farm Insurance. With the use of a
-                    badging system, we have brought back an aspect of a social
-                    working environment that has been lost due to the pandemic.
-                </p>
-            </div>
-        </div>
-
-        <footer
-            class="footer"
-            style="min-height: 30vh; background-color: crimson"
+        <p
+          class="greeting"
+          style="width: 60%; display: inline-block; margin-bottom: 20vh"
         >
-            <div
-                class="row py-5"
-                style="width: 100%; justify-content: center; text-align: center"
-            >
-                <div
-                    class="col-md-2"
-                    style="display: flex; flex-direction: column; color: white"
-                >
-                    <span style="font-size: 20pt">Sponsors</span>
-                    <br />
-                    <span>Dave Hopfensperger</span>
-                    <span>Glenn Austin</span>
-                </div>
-                <div
-                    class="col-md-2"
-                    style="display: flex; flex-direction: column; color: white"
-                >
-                    <span style="font-size: 20pt">Team Members</span>
-                    <br />
-                    <span style="font-size: 10pt">Abdulrahman Alamoudi</span>
-                    <span style="font-size: 10pt">Tristan Marcus</span>
-                    <span style="font-size: 10pt">Logan Ritter</span>
-                    <span style="font-size: 10pt">Robel Tegegne</span>
-                    <span style="font-size: 10pt">Yuanbo Xu</span>
-                </div>
-                <div
-                    class="col-md-2"
-                    style="display: flex; flex-direction: column; color: white"
-                >
-                    <span style="font-size: 20pt">Team Mentor</span>
-                    <br />
-                    <span style="font-size: 10pt">Sambashiva Kethireddy</span>
-                </div>
-            </div>
+          Welcome to Team Badger's Computer Science Capstone Landing Page. As a
+          team, we have worked together to develop an internal social media to
+          recognize skills and hard work for the employees at State Farm
+          Insurance. With the use of a badging system, we have brought back an
+          aspect of a social working environment that has been lost due to the
+          pandemic.
+        </p>
+      </div>
+    </div>
 
-            <div class="footer-text text-center py-0" style="color: white">
-                © Team Badgers 2020-2021 NAU Computer Science Capstone Team
-            </div>
-        </footer>
-    </body>
+    <footer class="footer" style="min-height: 30vh; background-color: crimson">
+      <div
+        class="row py-5"
+        style="width: 100%; justify-content: center; text-align: center"
+      >
+        <div
+          class="col-md-2"
+          style="display: flex; flex-direction: column; color: white"
+        >
+          <span style="font-size: 20pt">Sponsors</span>
+          <br />
+          <span>Dave Hopfensperger</span>
+          <span>Glenn Austin</span>
+        </div>
+        <div
+          class="col-md-2"
+          style="display: flex; flex-direction: column; color: white"
+        >
+          <span style="font-size: 20pt">Team Members</span>
+          <br />
+          <span style="font-size: 10pt">Abdulrahman Alamoudi</span>
+          <span style="font-size: 10pt">Tristan Marcus</span>
+          <span style="font-size: 10pt">Logan Ritter</span>
+          <span style="font-size: 10pt">Robel Tegegne</span>
+          <span style="font-size: 10pt">Yuanbo Xu</span>
+        </div>
+        <div
+          class="col-md-2"
+          style="display: flex; flex-direction: column; color: white"
+        >
+          <span style="font-size: 20pt">Team Mentor</span>
+          <br />
+          <span style="font-size: 10pt">Sambashiva Kethireddy</span>
+        </div>
+      </div>
+
+      <div class="footer-text text-center py-0" style="color: white">
+        © Team Badgers 2020-2021 NAU Computer Science Capstone Team
+      </div>
+    </footer>
+  </body>
 </html>

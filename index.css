@@ -1,24 +1,24 @@
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item .nav-link {
-  background: blue;
-  color: blue;
+  background: white;
+  color: black;
 }
 .navbar-light .navbar-nav .nav-item .nav-link {
   background: #f9f9f9;
   color: blue;
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link a:visited {
+/* .navbar-light .navbar-nav .nav-item .nav-link a:visited {
   background: #f9f9f9;
   color: gray;
-}
+} */
 
-.navbar-light .navbar-nav .nav-item .nav-link a:hover {
-  background: #f9f9f9;
-  color: red;
-}
-.navbar-light .navbar-nav .nav-item .nav-link a:active {
+/* .navbar-light .navbar-nav .nav-item .nav-link a:hover {
   background: #f9f9f9;
   color: black;
+} */
+.navbar-light .navbar-nav .nav-item .nav-link:active {
+  background: #f9f9f9;
+  /* color: black; */
   border-bottom: 1px solid black;
 }

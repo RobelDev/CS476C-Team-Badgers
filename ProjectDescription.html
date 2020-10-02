@@ -13,7 +13,6 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
-        <link rel=”stylesheet” type=”text/css” href=index.css” />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -69,21 +68,6 @@
         }
     </style>
 
-    <script type="text/JavaScript">
-        // state = {
-
-                // }
-                var show= false;
-                var tog = document.getElementById("toggle");
-            function toggle() {
-
-                show = !show;
-                if(show){
-                console.log("jjjjj");
-                }
-            }
-    </script>
-
     <body>
         <nav
             class="navbar fixed-top navbar-expand-lg navbar-light"
@@ -109,7 +93,7 @@
 
             <div class="collapse navbar-collapse" id="toggle">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a
                             class="nav-link"
                             href="index.html"
@@ -120,7 +104,7 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a
                             class="nav-link"
                             href="ProjectDescription.html"
@@ -154,50 +138,54 @@
         <br />
 
         <div class="container" style="margin-top: 6vh">
-            <div class="text-center">
-                <img
-                    class="LOGO"
-                    src="images/TeamBadgers.png"
-                    width="160px"
-                    height="160px"
-                />
+            <h2>Project Description</h2>
 
-                <h1 class="display-2" style="margin-top: 5vh">Team Badgers</h1>
-                <h2 class="display-4" style="font-size: 30pt">
-                    Skills/Knowledge Badging System
-                </h2>
+            <p>
+                For this project, we would like to create a powerful, flexible
+                badging system that can be used both throughout our company and
+                within individual work groups. Specifically, we envision a
+                secure internal web application where employees can easily
+                acknowledge the skills and accomplishments of others, while also
+                proudly displaying the kudos or awards that they have received;
+                this could also serve as a sort of virtual resume for the skills
+                and successes they have attained.
+            </p>
 
-                <hr
-                    style="
-                        width: 40%;
-                        text-align: center;
-                        background-color: slategray;
-                        margin-top: 10vh;
-                        margin-bottom: 10vh;
-                    "
-                />
-
-                <p
-                    class="greeting"
-                    style="
-                        width: 60%;
-                        display: inline-block;
-                        margin-bottom: 20vh;
-                    "
-                >
-                    Welcome to Team Badger's Computer Science Capstone Landing
-                    Page. As a team, we have worked together to develop an
-                    internal social media to recognize skills and hard work for
-                    the employees at State Farm Insurance. With the use of a
-                    badging system, we have brought back an aspect of a social
-                    working environment that has been lost due to the pandemic.
-                </p>
+            <div>
+                <ul>
+                    <li>
+                        <a href="ProjectDescriptions/process.html"
+                            >Developing Process</a
+                        >
+                    </li>
+                    <li>
+                        <a href="ProjectDescriptions/functionality.html"
+                            >Functionality</a
+                        >
+                    </li>
+                    <li>
+                        <a href="ProjectDescriptions/performance.html"
+                            >Performance</a
+                        >
+                    </li>
+                    <li>
+                        <a href="ProjectDescriptions/technologies.html"
+                            >Technologies</a
+                        >
+                    </li>
+                </ul>
             </div>
         </div>
 
         <footer
             class="footer"
-            style="min-height: 30vh; background-color: crimson"
+            style="
+                min-height: 30vh;
+                background-color: crimson;
+                position: fixed;
+                bottom: 0;
+                min-width: 100%;
+            "
         >
             <div
                 class="row py-5"

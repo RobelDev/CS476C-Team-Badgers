@@ -1,170 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site" />
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web site" />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel=”stylesheet” type=”text/css” href=index.css” />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-    <!-- JS, Popper.js, and jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+            crossorigin="anonymous"
+        />
+        <!-- JS, Popper.js, and jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
 
-    <title>Badgers</title>
-  </head>
-  <body>
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
-      style="border-bottom: 1px solid"
-    >
-      <a class="navbar-brand" href="index.html">
-        <img src="images/TeamBadgers.png" width="30px" height="30px" />
-        Badgers</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <title>Badgers</title>
+    </head>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
+    <style>
+        .container {
+            animation: fadeInAnimation ease-in 0.7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .navbar-nav > .active > a {
+            font-weight: bolder;
+        }
+    </style>
+
+    <body>
+        <nav
+            class="navbar fixed-top navbar-expand-lg navbar-light"
+            style="background-color: crimson"
+        >
+            <a class="navbar-brand" href="index.html" style="color: white">
+                <img src="images/TeamBadgers.png" width="30px" height="30px" />
+                Badgers</a
             >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="ProjectDescriptions/ProjectDescription.html"
-              >Project Description</a
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ProjectDocuments.html"
-              >Project Documents</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="TheTeam.html">The Team</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <br />
-    <br />
-    <br />
-    <div class="container">
-      <h3><br />Skills/Knowledge Badging System: Mini Intro</h3>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/-sEUK1Rh1-E"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Open the
-        <a
-          href="ProjectDocuments/Skills_Knowledge Badging System Mini Intro Presentation.pdf"
-          >file</a
-        >.
-      </p>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index.html"
+                            style="color: white"
+                            >Home <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="ProjectDescription.html"
+                            style="color: white"
+                            >Project Description</a
+                        >
+                    </li>
+                    <li class="nav-item active">
+                        <a
+                            class="nav-link"
+                            href="ProjectDocuments.html"
+                            style="color: white"
+                            >Project Documents</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="TheTeam.html"
+                            style="color: white"
+                            >The Team</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-      <h3>CS476C Team Badgers Team Standards</h3>
-      <p>
-        Open the
-        <a href="ProjectDocuments/CS476CTeamBadgersTeamStandards.pdf">file</a>.
-      </p>
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <h3><br />Skills/Knowledge Badging System: Mini Intro</h3>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-sEUK1Rh1-E"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <p>
+                Open the
+                <a
+                    href="ProjectDocuments/Skills_Knowledge Badging System Mini Intro Presentation.pdf"
+                    >file</a
+                >.
+            </p>
 
-      <h3>CS476C Team Badgers Team Inventory</h3>
-      <p>
-        Open the
-        <a href="ProjectDocuments/CS476C_Team_Badgers_Team_Inventory.pdf"
-          >file</a
-        >.
-      </p>
-    </div>
-    <br />
-    <br />
-    <footer class="page-footer font-small cyan darken-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 py-5">
-            <!-- <div class="mb-5 flex-center">
-                            <a class="fb-ic">
-                                <i
-                                    class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"
-                                >
-                                </i>
-                            </a>
+            <h3>CS476C Team Badgers Team Standards</h3>
+            <p>
+                Open the
+                <a href="ProjectDocuments/CS476CTeamBadgersTeamStandards.pdf"
+                    >file</a
+                >.
+            </p>
 
-                            <a class="tw-ic">
-                                <i
-                                    class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"
-                                >
-                                </i>
-                            </a>
-
-                            <a class="li-ic">
-                                <i
-                                    class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"
-                                >
-                                </i>
-                            </a>
-                        </div> -->
-          </div>
+            <h3>CS476C Team Badgers Team Inventory</h3>
+            <p>
+                Open the
+                <a
+                    href="ProjectDocuments/CS476C_Team_Badgers_Team_Inventory.pdf"
+                    >file</a
+                >.
+            </p>
         </div>
-      </div>
+        <br />
+        <br />
+        <footer
+            class="footer"
+            style="min-height: 30vh; background-color: crimson"
+        >
+            <div
+                class="row py-5"
+                style="width: 100%; justify-content: center; text-align: center"
+            >
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Sponsors</span>
+                    <br />
+                    <span>Dave Hopfensperger</span>
+                    <span>Glenn Austin</span>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Team Members</span>
+                    <br />
+                    <span style="font-size: 10pt">Abdulrahman Alamoudi</span>
+                    <span style="font-size: 10pt">Tristan Marcus</span>
+                    <span style="font-size: 10pt">Logan Ritter</span>
+                    <span style="font-size: 10pt">Robel Tegegne</span>
+                    <span style="font-size: 10pt">Yuanbo Xu</span>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Team Mentor</span>
+                    <br />
+                    <span style="font-size: 10pt">Sambashiva Kethireddy</span>
+                </div>
+            </div>
 
-      <div class="footer-copyright text-center py-3">
-        © Team Badgers 2020-2021 NAU Computer Science Capstone Team
-      </div>
-    </footer>
-  </body>
+            <div class="footer-text text-center py-0" style="color: white">
+                © Team Badgers 2020-2021 NAU Computer Science Capstone Team
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,280 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site" />
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web site" />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel=”stylesheet” type=”text/css” href=index.css” />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <title>Badgers</title>
-  </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="border-bottom: 1px solid ">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="images/TeamBadgers.png"
-          width="30px"
-          height="30px"
-        /> Badgers</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+            integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+            crossorigin="anonymous"
+        />
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
+        <!-- JS, Popper.js, and jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+
+        <title>Badgers</title>
+    </head>
+
+    <style>
+        .container {
+            animation: fadeInAnimation ease-in 0.7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .navbar-nav > .active > a {
+            font-weight: bolder;
+        }
+    </style>
+
+    <body>
+        <nav
+            class="navbar fixed-top navbar-expand-lg navbar-light"
+            style="background-color: crimson"
+        >
+            <a class="navbar-brand" href="index.html" style="color: white">
+                <img src="images/TeamBadgers.png" width="30px" height="30px" />
+                Badgers</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ProjectDescriptions/ProjectDescription.html">Project Description</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ProjectDocuments.html">Project Documents</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="TheTeam.html">The Team</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="color: white"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <br />
-    <br />
-    <br />
-    <div class="container">
-      <div
-        style="
-          display: grid;
-          grid-gap: 20px;
-          grid-template-columns: repeat(3, 1fr);
-        "
-      >
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/robel.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Robel Tegegne (Team Lead)</h5>
-            <p class="card-text">
-              Team Lead - coordinates task assignments and ensures work is progressing, runs meetings, and makes initial efforts to resolve conflicts
-              <br>
-              <br>
-              Release Manager - coordinates project versioning and branching, reviews and cleans up commit logs for accuracy, readability, and understandability, and ensures that any build tools can quickly generate a working release.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Team Lead, Realease Manager, Coder</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: rk394@nau.edu" class="card-link">rk394@nau.edu</a>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index.html"
+                            style="color: white"
+                            >Home <span class="sr-only">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="ProjectDescription.html"
+                            style="color: white"
+                            >Project Description</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="ProjectDocuments.html"
+                            style="color: white"
+                            >Project Documents</a
+                        >
+                    </li>
+                    <li class="nav-item active">
+                        <a
+                            class="nav-link"
+                            href="TheTeam.html"
+                            style="color: white"
+                            >The Team</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="container">
+            <div
+                style="
+                    display: grid;
+                    grid-gap: 20px;
+                    grid-template-columns: repeat(3, 1fr);
+                "
+            >
+                <div class="card" style="width: 18rem">
+                    <img
+                        class="card-img-top"
+                        src="images/robel.jpg"
+                        alt="Card image cap"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Robel Tegegne (Team Lead)</h5>
+                        <p class="card-text">
+                            Team Lead - coordinates task assignments and ensures
+                            work is progressing, runs meetings, and makes
+                            initial efforts to resolve conflicts
+                            <br />
+                            <br />
+                            Release Manager - coordinates project versioning and
+                            branching, reviews and cleans up commit logs for
+                            accuracy, readability, and understandability, and
+                            ensures that any build tools can quickly generate a
+                            working release.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Team Lead, Realease Manager, Coder
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto: rk394@nau.edu" class="card-link"
+                            >rk394@nau.edu</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <img
+                        class="card-img-top"
+                        src="images/tristan.png"
+                        alt="Card image cap"
+                        style="height: 18rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Tristan Marcus</h5>
+                        <p class="card-text">
+                            Architect - Maintaining project structure; Ensuring
+                            precise feature implementation during development.
+                            <br />
+                            <br />
+                            Quality Assurance - Double checks the documents,
+                            code, and other work to make sure there are no
+                            errors and everything is up to standards.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Architect, Quality Assurance, Coder
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto: tjm429@nau.edu" class="card-link"
+                            >tjm429@nau.edu</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <img
+                        class="card-img-top"
+                        src="images/logan.jpg"
+                        alt="Card image cap"
+                        style="height: 18rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Logan Ritter</h5>
+                        <p class="card-text">
+                            Team/Customer Communicator - Communicate with the
+                            sponsor as well as the team to inform them of
+                            meetings and any major updates.
+                            <br />
+                            <br />
+                            Recorder - Provide Meeting summaries at the end of
+                            each meeting.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Team Communicator, Recorder, Coder
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto: lkr57@nau.edu" class="card-link"
+                            >lkr57@nau.edu</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <img
+                        class="card-img-top"
+                        src="images/abdul.jpg"
+                        alt="Card image cap"
+                        style="height: 18rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Abdulrahman Alamoudi</h5>
+                        <p class="card-text">
+                            Release Manager - coordinates project versioning and
+                            branching, reviews and cleans up commit logs for
+                            accuracy, readability, and understandability, and
+                            ensures that any build tools can quickly generate a
+                            working release.
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">2nd Release Manager</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto: aaa858@nau.edu" class="card-link"
+                            >aaa858@nau.edu</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <img
+                        class="card-img-top"
+                        src="images/xu.jpg"
+                        alt="Card image cap"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Xu Yuanbo</h5>
+                        <p class="card-text">
+                            Recorder/Minutes - This team member maintains
+                            detailed meeting minutes
+                            <br />
+                            <br />
+                            Release Manager - This team member coordinates
+                            project versioning and branching
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Minutes and 3rd Release Manager
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto: yx59@nau.edu" class="card-link"
+                            >yx59@nau.edu</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <img
+                        class="card-img-top"
+                        src="images/shiva.HEIC"
+                        alt="Card image cap"
+                        style="height: 18rem"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title">Sambashiva Kethireddy</h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Team Mentor</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="mailto: sk2292@nau.edu" class="card-link"
+                            >sk2292@nau.edu</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Dave Hopfensperger</h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Sponsor - State Farm®
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a
+                            href="mailto: dave.hopfensperger.br2u@statefarm.com"
+                            class="card-link"
+                            >dave.hopfensperger.br2u@statefarm.com</a
+                        >
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                        <h5 class="card-title">Glenn Austin</h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Sponsor - State Farm®
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a
+                            href="mailto: glenn.austin.gkst@statefarm.com"
+                            class="card-link"
+                            >glenn.austin.gkst@statefarm.com</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
         </div>
 
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/tristan.png"
-            alt="Card image cap"
-            style="height: 18rem;"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Tristan Marcus</h5>
-            <p class="card-text">
-              Architect - Maintaining project structure; Ensuring precise feature implementation during development.
-              <br>
-              <br>
-              Quality Assurance - Double checks the documents, code, and other work to make sure there are no errors and everything is up to standards.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Architect, Quality Assurance, Coder</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: tjm429@nau.edu" class="card-link">tjm429@nau.edu</a>
-          </div>
-        </div>
+        <footer
+            class="footer"
+            style="min-height: 30vh; background-color: crimson"
+        >
+            <div
+                class="row py-5"
+                style="width: 100%; justify-content: center; text-align: center"
+            >
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Sponsors</span>
+                    <br />
+                    <span>Dave Hopfensperger</span>
+                    <span>Glenn Austin</span>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Team Members</span>
+                    <br />
+                    <span style="font-size: 10pt">Abdulrahman Alamoudi</span>
+                    <span style="font-size: 10pt">Tristan Marcus</span>
+                    <span style="font-size: 10pt">Logan Ritter</span>
+                    <span style="font-size: 10pt">Robel Tegegne</span>
+                    <span style="font-size: 10pt">Yuanbo Xu</span>
+                </div>
+                <div
+                    class="col-md-2"
+                    style="display: flex; flex-direction: column; color: white"
+                >
+                    <span style="font-size: 20pt">Team Mentor</span>
+                    <br />
+                    <span style="font-size: 10pt">Sambashiva Kethireddy</span>
+                </div>
+            </div>
 
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/logan.jpg"
-            alt="Card image cap"
-            style="height: 18rem;"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Logan Ritter</h5>
-            <p class="card-text">
-              Team/Customer Communicator - Communicate with the sponsor as well as the team to inform them of meetings and any major updates. 
-              <br>
-              <br>
-              Recorder - Provide Meeting summaries at the end of each meeting.
-
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Team Communicator, Recorder, Coder</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: lkr57@nau.edu" class="card-link">lkr57@nau.edu</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/abdul.jpg"
-            alt="Card image cap"
-            style="height: 18rem;"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Abdulrahman Alamoudi</h5>
-            <p class="card-text">
-              Release Manager - coordinates project versioning and branching, reviews and cleans up commit logs for accuracy, readability, and understandability, and ensures that any build tools can quickly generate a working release.
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">2nd Release Manager</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: aaa858@nau.edu" class="card-link">aaa858@nau.edu</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/xu.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Xu Yuanbo</h5>
-            <p class="card-text">
-              Recorder/Minutes - This team member maintains detailed meeting minutes
-              <br>
-              <br>
-              Release Manager - This team member coordinates project versioning and branching
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Minutes and 3rd Release Manager</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: yx59@nau.edu" class="card-link">yx59@nau.edu</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src="images/shiva.HEIC"
-            alt="Card image cap"
-            style="height: 18rem;"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Sambashiva Kethireddy</h5>
-            <p class="card-text">
-              
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Team Mentor</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: sk2292@nau.edu" class="card-link">sk2292@nau.edu</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src=".../100px180/?text=Image cap"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Dave Hopfensperger</h5>
-            <p class="card-text">
-              
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Sponsor - State Farm Insurance</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: dave.hopfensperger.br2u@statefarm.com" class="card-link">dave.hopfensperger.br2u@statefarm.com</a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem">
-          <img
-            class="card-img-top"
-            src=".../100px180/?text=Image cap"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Glenn Austin</h5>
-            <p class="card-text">
-              
-            </p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Sponsor - State Farm Insurance</li>
-          </ul>
-          <div class="card-body">
-            <a href="mailto: glenn.austin.gkst@statefarm.com" class="card-link">glenn.austin.gkst@statefarm.com</a>
-          </div>
-        </div>
-
-
-      </div>
-
-      
-
-    <br />
-    <br />
-
-      <div class="footer-copyright text-center py-3">
-        © Team Badgers 2020-2021 NAU Computer Science Capstone Team
-      </div>
-    </footer>
-  </body>
+            <div class="footer-text text-center py-0" style="color: white">
+                © Team Badgers 2020-2021 NAU Computer Science Capstone Team
+            </div>
+        </footer>
+    </body>
 </html>

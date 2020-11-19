@@ -66,6 +66,20 @@
     .navbar-nav > .active > a {
       font-weight: bolder;
     }
+
+    .grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 700px) {
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
   </style>
 
   <body>
@@ -129,12 +143,9 @@
     <div class="container">
       <h2 style="text-align: center;">Team Badgers</h2>
       <hr>
+
       <div
-        style="
-          display: grid;
-          grid-gap: 20px;
-          grid-template-columns: repeat(3, 1fr);
-        "
+        class="grid"
       >
         <div class="card" style="width: 18rem">
           <img

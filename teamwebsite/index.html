@@ -53,6 +53,9 @@
     </head>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         .container {
             animation: fadeInAnimation ease-in 0.7s;
             animation-iteration-count: 1;
@@ -70,6 +73,45 @@
         .navbar-nav > .active > a {
             font-weight: bolder;
         }
+
+        .learn-more-text {
+            padding-top: 10vh;
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: row;
+            padding-top: 6vh;
+            justify-content: space-around;
+            padding-bottom: 20vh;
+        }
+        .mini-intro-div {
+            padding-right: 20vw;
+        }
+        .mini-intro-div p {
+            font-size: 1.3vw;
+        }
+
+        .design-review-div {
+            font-size: 1.3vw;
+        }
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            width: 1vw;
+            height: 1vw;
+        }
+        .arrow:hover {
+            border: solid crimson;
+            border-width: 0 3px 3px 0;
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            }
     </style>
 
    
@@ -172,7 +214,7 @@
                     style="
                         width: 60%;
                         display: inline-block;
-                        margin-bottom: 20vh;
+                        margin-bottom: 10vh;
                     "
                 >
                     Welcome to Team Badger's Computer Science Capstone Landing
@@ -182,6 +224,49 @@
                     badging system, we have brought back an aspect of a social
                     working environment that has been lost due to the pandemic.
                 </p>
+
+                <p><a href="#title"><i class="arrow down"></i></a></p>
+
+                <h2 id=title class="learn-more-text"> If you'd like to learn more about our project...</h2>
+
+                <hr style="
+                        width: 70%;
+                        text-align: center;
+                        background-color: slategray;
+                        margin-top: 3vh;
+                        margin-bottom: 5vh;
+                    ">
+
+                <div class="video-container"
+                id="videos">
+                    
+                    
+                    <div class="mini-intro-div">
+                        <p>
+                            Watch our Mini-Introduction for a brief overview of our project!
+                        </p>
+                        <iframe
+                            class="mini-intro-frame"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/-sEUK1Rh1-E"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+
+                    <div class="design-review-div">
+                        <p>For a more in depth view, watch our Design-Review Presentation!</p>
+                        <iframe class="design-review-frame" width="560" height="315" src="https://www.youtube.com/embed/WdZjDBSj5vA" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                        
+                    </div>
+                </div>
             </div>
         </div>
 

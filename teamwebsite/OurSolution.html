@@ -98,7 +98,7 @@
             </a>
           </li>
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a
               class="nav-link"
               href="ProjectDescription.html"
@@ -229,6 +229,10 @@
                     <br />
                   </ul>
                 </div>
+                <li>
+                  <h6>System Architecture</h6>
+                  <img src="./images//SystemArchitecture.png" alt="development plan" height = "300" width="50%"/>
+                </li>
             </li>
             <br />
             <br />
@@ -238,39 +242,126 @@
                 <ul>
                   <li> 
                     <h6>Interesting and Responsive GUI</h6>
-                    <img src="./images//homepage.png" alt="development plan" height = "600" width="100%"/>
+                      The first component of our system is the homepage of our application. 
+                      This homepage will be broken up into three parts. The first part located on 
+                      the left-hand side is our tool bar where users can access all of our different 
+                      components in popup modals. The next part is located in the center and it is our 
+                      waterfall style feed where all badge information messages from every user is 
+                      displayed. The purpose of this is to add to the social media aspect of our 
+                      application making it similar to Facebook or Twitter. Our third part is located 
+                      on the right-hand side and is our user badge library. Here the users can see all 
+                      the badges they have earned. The goal of the homepage GUI is to allow users to 
+                      have an easy to use and navigate application, so our product is more enjoyable to 
+                      use. 
+                    <br />
+                    <br />
+                    <figure>
+                      <img src="./images//homepage.png" alt="development plan" height = "300" width="50%"/>
+                      <figcaption>Application Homepage</figcaption>
+                    </figure>
                   </li>
                   <br />
                   <li>
                     <h6>Account System with Access Restrictions</h6>
-                    <img src="./images//login.png" alt="development plan" height = "600" width="100%"/> 
+                      The next component of our application is the user authentication system. 
+                      The sole responsibility of this component is to allow users to create accounts 
+                      and provide an extra layer of security by forcing users to log in to their 
+                      accounts every time the application is opened. This is the only component that 
+                      will be separate from the single page application as we do not want to give 
+                      someone access to the application if they have not been authenticated. This 
+                      component will be hosted on the frontend and will speak directly to the database 
+                      to authenticate users. For more security we will be using a token authenticator. 
+                      For example when a user creates a new account a random unique token will be 
+                      generated for their account and every time they log in, the token will be compared 
+                      to the one in the database to authenticate them.
+                    <br />
+                    <br />
+                    <figure>
+                      <img src="./images//login.png" alt="development plan" height = "300" width="50%"/>
+                      <figcaption>User Login Portal</figcaption>
+                    </figure>
                   </li>
                   <br />
                   <li>
                     <h6>Badge Delivery System (Send/Receive/Remove)</h6>
-                    <img src="./images//badgeDelivery.png" alt="development plan" height = "600" width="100%"/>
+                      The next component of our application is the badge delivery system will be the main 
+                      component of our application. Its main job is to provide badges to the user when 
+                      they earn them. It is also responsible for displaying the badges earned by users 
+                      in the waterfall feed. A user will be able to see their badges on the front-end on 
+                      the right panel of the application, as well as the badges they can still earn. 
+                      Badges can also be sent to other users depending on the badge. This part of our 
+                      application will be hosted on the front-end but all the functionality will be 
+                      done on the back-end which will use the database.
+                    <br />
+                    <br />
+                    <figure>
+                      <img src="./images//badgeDelivery.png" alt="development plan" height = "300" width="50%"/>
+                      <figcaption>Send a Badge Interface</figcaption>
+                    </figure> 
                   </li>
                   <br />
                   <li>
                     <h6>Badge printing</h6>
-                    <img src="./images//" alt="development plan" height = "600" width="100%"/>
+                      The next component of our application is the badge printing model. The goal of 
+                      this component is to allow the user to access the PDF of every badge they have 
+                      earned so they can download, print and display their badges in the real world. 
+                      When a user chooses the badge printing model on our application the first thing 
+                      that will happen is a popup with all their earned badges will appear. They will 
+                      then select a badge then select the confirmation box. It will then open the badge 
+                      PDF in a new window for the user to do with it as they please. This component will 
+                      be hosted on the front-end and will use the back-end to parse the database for the 
+                      selected badges.
+                    <br />
+                    <br />
+                    <figure>
+                      <img src="./images//" alt="Badge Printing" height = "300" width="50%"/>
+                      <figcaption>Print a Badge Interface</figcaption>
+                    </figure>
                   </li>
                   <br />
                   <li>
                     <h6>Internal Social Currency (Kudos)</h6>
+                      The next component of our application is the Kudos system. This will be a 
+                      second way for users to earn rewards and recognition from our application. 
+                      This will work differently from the badges in the sense that Kudos will be 
+                      given out on the daily by coworkers for many different reasons. Kudos are 
+                      meant to be sent for smaller accomplishments where the badges are sent for 
+                      larger milestones. Our Kudos system will be responsible for the sending and 
+                      receiving of Kudos to every user. It will also be responsible for the Kudos 
+                      store where managers can set rewards and employees can redeem them. Like the 
+                      badge delivery system, the Kudos system will be hosted on the front end of the 
+                      application with all the functionality being done in the back-end with help from 
+                      the database. An important detail is that each user's store will be different 
+                      depending on what their team's manager sets for rewards.
                     <br />
-                    <h7>Send Kudos</h7>
                     <br />
-                    <img src="./images//sendkudos.png" alt="development plan" height = "600" width="50%"/>
-                    <br />
-                    <h7>Spend Kudos</h7>
-                    <br />
-                    <img src="./images//kudos2.png" alt="development plan" height = "600" width="50%"/>
+                    <figure>
+                      <img src="./images//sendkudos.png" alt="development plan" height = "300" width="25%"/>
+                      <figcaption>Send Kudos Interface</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="./images//kudos2.png" alt="development plan" height = "300" width="25%"/>
+                      <figcaption>Spend Kudos Interface</figcaption>
+                    </figure>
                   </li>
                   <br />
                   <li>
                     <h6>Email Signature Integration</h6>
-                    <img src="./images//email.png" alt="development plan" height = "600" width="100%"/> 
+                      The last component of our application is the email signature generator which 
+                      allows users to generate a customized email signature using their earned badges. 
+                      This will provide another way for the users to show off their accomplishments. 
+                      Unlike the other components, the majority of the email signature generator 
+                      functionality will take place on the front end. The only back-end use will be the 
+                      loading of the badges to be selected for the signature. We want to give our users 
+                      customizability by allowing them to choose the font, color, and order in which 
+                      they would like the parts of their signature to be displayed. Once a signature has 
+                      been generated it will be available to copy as a whole and saved by the user.
+                    <br />
+                    <br />
+                    <figure>
+                      <img src="./images//email.png" alt="development plan" height = "300" width="50%"/>
+                      <figcaption>Generated Email Signature Example</figcaption>
+                    </figure> 
                   </li>
                   
                 </ul>
